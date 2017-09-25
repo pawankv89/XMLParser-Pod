@@ -7,7 +7,7 @@
 //
 
 #import "PKViewController.h"
-
+#import <PKXMLParser/PKXMLParser.h>
 @interface PKViewController ()
 
 @end
@@ -17,13 +17,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view, typically from a nib.
+    
+    //Parser
+    [self parser];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)parser{
+    
+    NSURL *URL = [[NSURL alloc] initWithString:@"http://images.apple.com/main/rss/hotnews/hotnews.rss#sthash.TyhRD7Zy.dpuf"];
+    NSString *xmlString = [[NSString alloc] initWithContentsOfURL:URL encoding:NSUTF8StringEncoding error:NULL];
+    //NSLog(@"string: %@", xmlString);
+    NSDictionary *xmlDoc = [NSDictionary dictionaryWithXMLString:xmlString];
+    NSLog(@"dictionary: %@", xmlDoc);
 }
 
 @end

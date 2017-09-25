@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'PKXMLParser'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of PKXMLParser.'
+s.name             = 'PKXMLParser'
+s.version          = '1.0.0'
+s.summary          = 'PKXMLParser is managed for all type of xml file on our project.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,26 +17,27 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+s.description      = <<-DESC
+This PKXMLParser managed all types of xml file and url based xml, you called some method with file path and retrive dictionary.
+DESC
 
-  s.homepage         = 'https://github.com/pawankv89@gmail.com/PKXMLParser'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'pawankv89@gmail.com' => 'pawankv89@gmail.com' }
-  s.source           = { :git => 'https://github.com/pawankv89@gmail.com/PKXMLParser.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+s.homepage         = 'https://github.com/pawankv89/PKXMLParser'
+# s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+s.license          = { :type => 'MIT', :file => 'LICENSE' }
+s.author           = { 'pawankv89' => 'pawankv89@gmail.com' }
+s.source           = { :git => 'https://github.com/pawankv89/PKXMLParser.git', :tag => s.version.to_s }
+# s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+s.ios.deployment_target = '8.0'
 
-  s.source_files = 'PKXMLParser/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'PKXMLParser' => ['PKXMLParser/Assets/*.png']
-  # }
+s.source_files = 'PKXMLParser/Classes/**/*{h,m}'
+s.public_header_files = 'PKXMLParser/**/*.h'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+# s.resource_bundles = {
+#   'XMLParser' => ['PKXMLParser/Assets/*.png']
+# }
+
+# s.public_header_files = 'Pod/Classes/**/*.h'
+# s.frameworks = 'UIKit', 'MapKit'
+# s.dependency 'AFNetworking', '~> 2.3'
 end

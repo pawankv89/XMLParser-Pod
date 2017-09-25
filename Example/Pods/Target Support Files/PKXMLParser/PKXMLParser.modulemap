@@ -1,0 +1,6 @@
+framework module PKXMLParser {
+  umbrella header "PKXMLParser-umbrella.h"
+
+  export *
+  module * { export * }
+}
