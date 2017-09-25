@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PKXMLParser_Example' do
+  pod 'PKXMLParser', :path => '../'
+
+  target 'PKXMLParser_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
