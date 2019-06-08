@@ -1,4 +1,4 @@
-# PKXMLParser
+# XML Parser
 
 [![CI Status](http://img.shields.io/travis/pawankv89@gmail.com/PKXMLParser.svg?style=flat)](https://travis-ci.org/pawankv89@gmail.com/PKXMLParser)
 [![Version](https://img.shields.io/cocoapods/v/PKXMLParser.svg?style=flat)](http://cocoapods.org/pods/PKXMLParser)
